@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Desafio 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+       
+        <div id="start-screen" class="screen active">
+            <h1>Quiz Desafio</h1>
+            <p>15 perguntas variadas • Timer por pergunta • Teste seus conhecimentos!</p>
+            <button id="start-btn" class="btn primary">Começar Agora</button>
+        </div>
+
+     
+        <div id="quiz-screen" class="screen">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <div class="timer">Tempo: <span id="time-left">15</span>s</div>
+            <div class="score">
+                Acertos: <span id="correct-count">0</span> • Erros: <span id="wrong-count">0</span>
+                <span id="percentage">0%</span>
+            </div>
+            <h2 id="question"></h2>
+            <div id="answer-buttons" class="answers"></div>
+            <button id="next-btn" class="btn primary" disabled>Próxima →</button>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <h1>Quiz Finalizado!</h1>
+            <div class="final-result">
+                <p>Você acertou <span id="final-correct">0</span> de 15</p>
+                <p id="final-percentage" class="big-percentage">0%</p>
+                <p id="result-message"></p>
+                <p>Melhor pontuação: <span id="high-score">0</span></p>
+            </div>
+            <button id="restart-btn" class="btn primary">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
