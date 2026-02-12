@@ -1,4 +1,4 @@
-*Projeto apenas para estudos e prática de frontend.**
+*Projeto apenas para estudos e prática de frontend.*
 
 Tecnologias: HTML | CSS | JavaScript (Vanilla)
 
